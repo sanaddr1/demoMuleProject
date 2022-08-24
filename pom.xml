@@ -36,9 +36,11 @@
                         <username>sandipbhadra</username>
                         <password>Oracle@123</password>
                         <environment>Sandbox</environment>
-                         <properties>
-                          <key>value</key>
-                         </properties>
+                        <applicationName>cicddemoapp</applicationName>
+	                	<businessGroupId>7f867ecc-4c82-45d0-a2f8-08327dbdab0f</businessGroupId>
+	                    <workers>1</workers>
+	                    <workerType>MICRO</workerType>
+                         
                  </cloudHubDeployment>
                  </configuration>
 			</plugin>
