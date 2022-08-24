@@ -29,6 +29,18 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				   <configuration>
+                      <cloudHubDeployment>
+                        <muleVersion>4.4.0</muleVersion>
+                        <uri>https://anypoint.mulesoft.com</uri>
+                        <username>sandipbhadra</username>
+                        <password>Oracle@123</password>
+                        <environment>Sandbox</environment>
+                         <properties>
+                          <key>value</key>
+                         </properties>
+                 </cloudHubDeployment>
+                 </configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -44,6 +56,12 @@
 			<groupId>org.mule.connectors</groupId>
 			<artifactId>mule-sockets-connector</artifactId>
 			<version>1.2.2</version>
+			<classifier>mule-plugin</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.mule.connectors</groupId>
+			<artifactId>mule-sftp-connector</artifactId>
+			<version>1.5.0</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
 	</dependencies>
